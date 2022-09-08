@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Navbar</title>
+    <style>
+        body{
+            margin: 0;
+            background-color: rgb(250, 242, 231);
+        }
+        .topContainer{
+            background-image: url(logo/about.jpg);
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .topContainer h1{
+            color: rgb(252, 25, 25);
+            font-size: 50px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            letter-spacing: 2px;
+            
+        }
+        .text{
+            margin: 50px 5%;
+            font-family: sans-serif;
+        }
+
+        .navbar{
+            display: flex;
+            position: fixed;
+            background-color: rgb(216, 210, 202);
+            width: 100%;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            transition: background-color 0.4s;
+        }
+        .navbar a img{
+            height: 50px;
+            padding: 10px;
+            margin-left: 20px;
+        }
+        .navbar ul{
+            display: flex;
+            list-style: none;
+        }
+        .navbar ul li a{
+            text-decoration: none;
+            margin: 0 10px; 
+            color: black;
+            font-family: cursive;
+        }
+
+        .navbar ul li a:hover{
+            color: red;
+        }
+
+        .navbar.active{
+            background-color: black;
+        }
+        .navbar.active ul li a{
+            color: white;
+        }
+        .navbar.active ul li a:hover{
+            color: rgb(252, 6, 6);
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="/index.html"><img src="logo/logo-white.png" alt="logo"></a>
+        <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">About Us</a></li>
+        </ul>
+    </div>
+    <div class="topContainer">
+        <h1>Welcome To Our Website</h1>
+    </div>
+    <div class="bottomContainer">
+        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores rem quaerat velit pariatur, est, rerum voluptatem commodi consequuntur iure laudantium doloribus. Reiciendis necessitatibus magnam accusantium illo eligendi vel facere laudantium saepe ducimus iusto, ea rem nesciunt dolorum! Quibusdam illo corporis magnam repudiandae officia, animi tenetur tempore! Repellat facilis similique distinctio molestias eveniet nihil illo repellendus commodi officiis ut iure saepe a explicabo voluptatem impedit minus corrupti aspernatur, eum amet vel dolorem corporis. Officia assumenda aperiam harum dolore fuga dolorem optio placeat ex distinctio, doloremque labore culpa quaerat alias autem quia sapiente repudiandae ab, itaque quasi? Eveniet dolor vel cumque asperiores.</p>
+        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores rem quaerat velit pariatur, est, rerum voluptatem commodi consequuntur iure laudantium doloribus. Reiciendis necessitatibus magnam accusantium illo eligendi vel facere laudantium saepe ducimus iusto, ea rem nesciunt dolorum! Quibusdam illo corporis magnam repudiandae officia, animi tenetur tempore! Repellat facilis similique distinctio molestias eveniet nihil illo repellendus commodi officiis ut iure saepe a explicabo voluptatem impedit minus corrupti aspernatur, eum amet vel dolorem corporis. Officia assumenda aperiam harum dolore fuga dolorem optio placeat ex distinctio, doloremque labore culpa quaerat alias autem quia sapiente repudiandae ab, itaque quasi? Eveniet dolor vel cumque asperiores.</p>
+        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores rem quaerat velit pariatur, est, rerum voluptatem commodi consequuntur iure laudantium doloribus. Reiciendis necessitatibus magnam accusantium illo eligendi vel facere laudantium saepe ducimus iusto, ea rem nesciunt dolorum! Quibusdam illo corporis magnam repudiandae officia, animi tenetur tempore! Repellat facilis similique distinctio molestias eveniet nihil illo repellendus commodi officiis ut iure saepe a explicabo voluptatem impedit minus corrupti aspernatur, eum amet vel dolorem corporis. Officia assumenda aperiam harum dolore fuga dolorem optio placeat ex distinctio, doloremque labore culpa quaerat alias autem quia sapiente repudiandae ab, itaque quasi? Eveniet dolor vel cumque asperiores.</p>
+        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores rem quaerat velit pariatur, est, rerum voluptatem commodi consequuntur iure laudantium doloribus. Reiciendis necessitatibus magnam accusantium illo eligendi vel facere laudantium saepe ducimus iusto, ea rem nesciunt dolorum! Quibusdam illo corporis magnam repudiandae officia, animi tenetur tempore! Repellat facilis similique distinctio molestias eveniet nihil illo repellendus commodi officiis ut iure saepe a explicabo voluptatem impedit minus corrupti aspernatur, eum amet vel dolorem corporis. Officia assumenda aperiam harum dolore fuga dolorem optio placeat ex distinctio, doloremque labore culpa quaerat alias autem quia sapiente repudiandae ab, itaque quasi? Eveniet dolor vel cumque asperiores.</p>
+        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores rem quaerat velit pariatur, est, rerum voluptatem commodi consequuntur iure laudantium doloribus. Reiciendis necessitatibus magnam accusantium illo eligendi vel facere laudantium saepe ducimus iusto, ea rem nesciunt dolorum! Quibusdam illo corporis magnam repudiandae officia, animi tenetur tempore! Repellat facilis similique distinctio molestias eveniet nihil illo repellendus commodi officiis ut iure saepe a explicabo voluptatem impedit minus corrupti aspernatur, eum amet vel dolorem corporis. Officia assumenda aperiam harum dolore fuga dolorem optio placeat ex distinctio, doloremque labore culpa quaerat alias autem quia sapiente repudiandae ab, itaque quasi? Eveniet dolor vel cumque asperiores.</p>
+    </div>
+
+
+    <script>
+        const navbarEl = document.querySelector(".navbar");
+
+        const bottomContainerEl = document.querySelector(".bottomContainer");
+
+        console.log(navbarEl.offsetHeight);
+        console.log(bottomContainerEl.offsetTop);
+
+        window.addEventListener("scroll", ()=>{
+            if(window.scrollY > bottomContainerEl.offsetTop - navbarEl.offsetHeight - 50){
+                navbarEl.classList.add("active")
+            }else{
+                navbarEl.classList.remove("active")
+            }
+        })
+    </script>
+</body>
+</html>
